@@ -459,8 +459,7 @@ class InputHookManager(object):
         self.clear_inputhook()
 
     def enable_gevent(self, app=None):
-        """ gevent """
-        from gevent.monkey import patch_all
+        """gevent integration"""
         from gevent.socket import wait_read
 
         def inputhook_gevent():
