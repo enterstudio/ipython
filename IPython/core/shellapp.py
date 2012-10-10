@@ -165,8 +165,8 @@ class InteractiveShellApp(Configurable):
     module_to_run = Unicode('', config=True,
         help="Run the module as a script."
     )
-    gui = CaselessStrEnum(('qt', 'wx', 'gtk', 'glut', 'pyglet', 'osx'), config=True,
-        help="Enable GUI event loop integration ('qt', 'wx', 'gtk', 'glut', 'pyglet', 'osx')."
+    gui = CaselessStrEnum(('qt', 'wx', 'gtk', 'glut', 'pyglet', 'osx', 'gevent'), config=True,
+        help="Enable GUI event loop integration ('qt', 'wx', 'gtk', 'glut', 'pyglet', 'osx', 'gevent')."
     )
     pylab = CaselessStrEnum(['tk', 'qt', 'wx', 'gtk', 'osx', 'inline', 'auto'],
         config=True,
